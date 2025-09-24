@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atlas Creative — Home</title>
+  <meta name="description" content="Atlas Creative — product design & engineering studio. Purple gradient, glassmorphism example.">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/gallery.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Atlas<span>Creative</span></a>
+      <div class="nav-actions">
+        <button class="menu-btn" aria-controls="nav" aria-expanded="false">☰</button>
+      </div>
+
+      <nav class="primary-nav" id="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <p class="eyebrow">We design & build</p>
+
+          <div class="typing-wrap">
+            <div class="typed" data-strings='["beautiful interfaces.","scalable products.","human-centered brands."]'>
+              <span class="text" aria-hidden="true"></span><span class="cursor">|</span>
+            </div>
+          </div>
+
+          <h2 class="hero-title">Crafting product experiences with clarity and speed.</h2>
+          <p class="hero-lead">Full-stack product design and frontend engineering — accessible, performant, and focused on outcomes.</p>
+          <div style="margin-top:1rem">
+            <a href="services.html" class="btn">Our Services</a>
+            <a href="#work" class="btn ghost">Latest Work</a>
+          </div>
+
+          <ul style="display:flex;gap:1rem;margin-top:1rem;list-style:none;padding:0;color:var(--muted)">
+            <li><strong style="color:var(--text)">120+</strong> Projects</li>
+            <li><strong style="color:var(--text)">45</strong> Clients</li>
+            <li><strong style="color:var(--text)">99%</strong> Satisfaction</li>
+          </ul>
+        </div>
+
+        <figure class="hero-art reveal">
+          <img src="images/hero.jpg" alt="Team collaborating around laptops">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="container reveal" style="margin-top:2rem">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Green Trails">
+          <div class="card-body">
+            <h3>Green Trails</h3>
+            <p>Eco-travel marketplace with bookings, operator dashboards, and payouts (M-Pesa integration).</p>
+            <div style="margin-top:.5rem"><a href="gallery.html" class="btn ghost">View</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="FlowBank">
+          <div class="card-body">
+            <h3>FlowBank</h3>
+            <p>Fintech dashboard for transaction visualization and role-based access control.</p>
+            <div style="margin-top:.5rem"><a href="gallery.html" class="btn ghost">View</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project3.jpg" alt="Pulse Campaign">
+          <div class="card-body">
+            <h3>Pulse Campaign</h3>
+            <p>Campaign microsite with donation flow, analytics, and conversion optimization.</p>
+            <div style="margin-top:.5rem"><a href="contact.html" class="btn ghost">Get a Quote</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section class="container services-preview reveal" style="margin-top:2rem">
+      <h2>Services</h2>
+      <div class="services-grid" style="margin-top:1rem">
+        <div class="service-card">
+          <div class="service-icon">D</div>
+          <h4>Product Design</h4>
+          <p class="muted" style="color:var(--muted)">Research, prototyping, and design systems to scale product teams.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">F</div>
+          <h4>Frontend Engineering</h4>
+          <p class="muted" style="color:var(--muted)">React, static sites, PWAs, and performance tuning.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">I</div>
+          <h4>Integrations</h4>
+          <p class="muted" style="color:var(--muted)">Payment gateways, webhooks, analytics, notifications.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container cta-panel reveal" style="margin-top:2rem">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <div>
+          <h2>Ready to ship your product?</h2>
+          <p class="muted" style="color:var(--muted)">Talk to us — we’ll map a 90-day plan to launch a minimum lovable product.</p>
+        </div>
+        <div><a href="contact.html" class="btn large">Get Proposal</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html">Atlas<span>Creative</span></a><div class="muted" style="color:var(--muted)">Nairobi, Kenya</div></div>
+      <div style="display:flex;gap:1rem"><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a></div>
+    </div>
+    <div class="container" style="margin-top:.75rem;color:var(--muted)">© <span id="year-home"></span> Atlas Creative</div>
+  </footer>
+</body>
+</html>

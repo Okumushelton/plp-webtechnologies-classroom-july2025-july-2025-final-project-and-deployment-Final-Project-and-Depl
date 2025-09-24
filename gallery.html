@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Atlas Creative</title>
+  <meta name="description" content="Project gallery with filter and accessible lightbox.">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/gallery.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Atlas<span>Creative</span></a>
+      <div class="nav-actions"><button class="menu-btn" aria-controls="nav" aria-expanded="false">☰</button></div>
+      <nav class="primary-nav" id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html" class="nav-link">Gallery</a></li><li><a href="contact.html" class="cta">Contact</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="gallery-hero reveal"><h1>Gallery</h1><p class="hero-lead">Filter and click images to open the lightbox. Keyboard friendly.</p></section>
+
+    <div style="margin:1rem 0" class="filters reveal">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Web</button>
+      <button class="filter" data-filter="mobile">Mobile</button>
+      <button class="filter" data-filter="branding">Branding</button>
+    </div>
+
+    <section id="gallery-grid" class="gallery-grid reveal">
+      <figure class="gallery-item" data-category="web"><img src="images/project1.jpg" alt="Green Trails"><figcaption>Green Trails</figcaption></figure>
+      <figure class="gallery-item" data-category="mobile"><img src="images/project2.jpg" alt="FlowBank"><figcaption>FlowBank</figcaption></figure>
+      <figure class="gallery-item" data-category="branding"><img src="images/project3.jpg" alt="Pulse"><figcaption>Pulse</figcaption></figure>
+      <figure class="gallery-item" data-category="web"><img src="images/project4.jpg" alt="Outreach"><figcaption>Outreach</figcaption></figure>
+    </section>
+  </main>
+
+  <!-- Lightbox is created by gallery.js if missing; id/site-lightbox used by script -->
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="index.html">Atlas<span>Creative</span></a></div><div style="display:flex;gap:1rem"><a href="about.html">About</a><a href="services.html">Services</a></div></div><div class="container" style="margin-top:.75rem;color:var(--muted)">© <span id="year-gallery"></span> Atlas Creative</div></footer>
+</body>
+</html>
